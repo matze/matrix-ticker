@@ -1,0 +1,18 @@
+[package]
+name = "matrix-ticker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+embedded-graphics = "0"
+embedded-hal = "0"
+embedded-text = "0"
+matrix-sdk = { version = "0.4", default-features = false, features = ["rustls-tls"] }
+rppal = { version = "0", features = ["hal"] }
+serde = "1"
+serde_derive = "1"
+sh1106 = "0"
+tokio = { version = "1", features = ["full"] }
+toml = "0"
+tracing-subscriber = { version = "0", features = ["env-filter"] }
